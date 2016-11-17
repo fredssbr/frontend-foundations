@@ -1,0 +1,92 @@
+/*reseting the box model for the page*/
+html, body, h1, h2, h3, p, ol, ul, li, a{
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+
+body{
+    padding: 20px 20px 20px 20px;
+}
+
+h1 {
+    color: #ffffff;
+    margin: 10px 0 15px 0;
+    /*if you want to center children inside a block-level tag, set the text-align of the children to center*/
+    text-align: center;
+}
+
+h2 {
+    margin: 10px 0 20px 0;
+    text-align: center;
+}
+
+h3 {
+    margin: 15px 0 15px 0;
+    border-bottom: 1px solid #CCCCCC;
+    padding-bottom: 3px; /*padding is the space between content and border*/
+}
+
+ul, ol {
+    padding: 0 0 0 50px; /*padding is responsible for pushing lists away from the borders of the browser page*/
+}
+
+a {
+    text-decoration: none;
+}
+
+/*The order of the selectors matters
+If apply some styling to a ul after the .nav below, this .nav style would be overwritten
+*/
+.nav{
+    padding-left: 0;
+    text-align: center;
+}
+/*
+to avoid that, the rule is: generic first, specific after.
+*/
+.nav a{
+    color: #0000af;
+    text-decoration: none;
+}
+
+.nav li {
+    display: inline;
+}
+
+.recipes{
+    list-style-type: none;
+    padding: 0;
+}
+
+.recipes li{
+    border: 1px solid #b56663;
+    padding-left: 15px;
+    margin-bottom: 10px;
+}
+
+.recipes h3{
+    border-bottom: 0;
+}
+
+.recipes a{
+    color: #7facaa;
+    text-decoration: none;
+}
+
+.header{
+    padding: 10px 10px 10px 10px;
+    background-color: #b56663;
+}
+
+.header a{
+    color: #ffffff;
+}
+
+.main-content{
+    width: 500px;
+    padding: 20px 20px 20px 20px;
+    border: 1px solid #dddddd;
+    /*if you want to center an entire block-level tag and it's fixed-width, set the left and right margins to auto*/
+    margin: 30px auto 0 auto;
+}
