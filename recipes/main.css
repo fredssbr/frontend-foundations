@@ -83,10 +83,32 @@ to avoid that, the rule is: generic first, specific after.
     color: #ffffff;
 }
 
+.header img{
+    /*<img> is an inline-level tag, so it can't be centered with text-align. Instead, let's set the display to block and use
+    the margin auto appreach*/
+    display: block;
+    margin: 0 auto 0 auto;
+}
+
 .main-content{
     width: 500px;
     padding: 20px 20px 20px 20px;
     border: 1px solid #dddddd;
     /*if you want to center an entire block-level tag and it's fixed-width, set the left and right margins to auto*/
     margin: 30px auto 0 auto;
+}
+
+.photos{
+    list-style-type: none;
+    padding: 0;
+}
+
+.photos li{
+    display: inline;
+    padding-left: 11px;
+}
+
+.photos img{
+    width: 150px;
+    height: 150px;
 }
